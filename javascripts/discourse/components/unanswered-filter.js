@@ -57,9 +57,9 @@ export default Component.extend({
 
     if (newStatus && newStatus !== "all") {
       if (newStatus === "unanswered") {
-        params.push(`?solved=no`);
+        params.push(`solved=no`);
       } else if (newStatus === "answered") {
-        params.push(`?solved=yes`);
+        params.push(`solved=yes`);
       }
     }
 
