@@ -57,9 +57,9 @@ export default Component.extend({
 
     if (newStatus && newStatus !== "all") {
       if (newStatus === "unanswered") {
-        params.push(`max_posts=1`);
+        params.push(`?solved=no`);
       } else if (newStatus === "answered") {
-        params.push(`min_posts=2`);
+        params.push(`?solved=yes`);
       }
     }
 
