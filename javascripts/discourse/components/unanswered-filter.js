@@ -18,9 +18,9 @@ export default Component.extend({
   @discourseComputed
   queryStatus() {
     let queryStrings = window.location.search;
-    if (queryStrings.match(/min_posts=2/)) {
+    if (queryStrings.match(/solved=yes/)) {
       return "answered";
-    } else if (queryStrings.match(/max_posts=1/)) {
+    } else if (queryStrings.match(/solved=no/)) {
       return "unanswered";
     } else {
       return "all";
